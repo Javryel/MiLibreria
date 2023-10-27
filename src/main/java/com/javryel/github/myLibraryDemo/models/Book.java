@@ -1,4 +1,4 @@
-package com.javryel.github.miLibreriaDemo.models;
+package com.javryel.github.myLibraryDemo.models;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,16 +14,16 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class Libro {
+public class Book {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer libroId;
+	private Integer bookId;
 	private Long isbn;
 	
-	private String titulo;
-	private Integer anio;
-	private Integer ejemplares;
-	private Integer ejemplaresPrestados;
-	private Integer ejemplaresRestantes;
-	private Boolean alta; 
+	private String title;
+	private Integer year;
+	private Integer amount;
+	private Integer amountLend;
+	private Integer amountRemaining;
+	private Boolean register; 
 }
